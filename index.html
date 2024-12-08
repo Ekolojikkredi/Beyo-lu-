@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Ekolojik Kredi" />
+        </div>
+        <h1>Ekolojik Kredi Sistemi</h1>
+    </header>
+    <main>
+        <div id="content">
+            <section id="student-registration">
+                <h2>Öğrenci Kaydı</h2>
+                <form id="registration-form">
+                    <input type="text" id="student-name" placeholder="Ad" required>
+                    <input type="text" id="student-surname" placeholder="Soyad" required>
+                    <input type="email" id="student-email" placeholder="E-posta" required>
+                    <input type="text" id="student-number" placeholder="Öğrenci Numarası" required>
+                    <input type="text" id="student-class" placeholder="Sınıf" required>
+                    <button type="submit">Kayıt Ol</button>
+                </form>
+            </section>
+
+            <section id="waste-entry">
+                <h2>Atık Girişi</h2>
+                <form id="waste-form">
+                    <input type="text" id="waste-type" placeholder="Atık Türü" required>
+                    <input type="number" id="waste-weight" placeholder="Atık Ağırlığı (kg)" required>
+                    <button type="submit">Atık Ekle</button>
+                </form>
+            </section>
+
+            <section id="view-data">
+                <h2>Veri Görüntüle</h2>
+                <form id="view-data-form">
+                    <input type="email" id="view-email" placeholder="E-posta" required>
+                    <input type="text" id="view-number" placeholder="Öğrenci Numarası" required>
+                    <button type="submit">Verileri Görüntüle</button>
+                </form>
+                <div id="student-data"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Torbalı Anadolu Lisesi Coğrafya Proje Ödevi Ekolojik Kredi Örnek Sitesidir</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
